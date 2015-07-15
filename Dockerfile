@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN apt-get update && apt-get install -y vim php5 php5-mongo
+RUN apt-get update && apt-get install -y vim php5 php5-mongo curl
 RUN rm -rf /var/www
 RUN mkdir -p /var/www/html
 WORKDIR /var/www/html
