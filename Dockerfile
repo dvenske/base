@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN apt-get update && apt-get install -y vim php5 php5-mongo curl php5-curl ssmtp
+RUN apt-get update && apt-get install -y vim php5 php5-mongo curl php5-curl ssmtp php5-mysql imagemagick
 RUN rm -rf /var/www
 RUN mkdir -p /var/www/html
 WORKDIR /var/www/html
